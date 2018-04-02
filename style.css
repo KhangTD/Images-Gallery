@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+ body {
+     font-family: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,cantarell,open sans,helvetica neue,ubuntu,sans-serif;
+     font-size: 16px;
+     margin: 0;
+     padding: 0;
+ }
+ h1, h2, h4{
+     margin: 0;
+     padding: 0;
+ }
+a {
+    text-decoration: none;
+}
+/*==Len khung va tao menu doc==*/
+#container {
+    padding-left: 150px;
+    position: relative;
+    width:100%;
+    left: 0;
+ }
+#menu {
+    background-color: #222;
+    position: fixed;
+    width: 150px;
+    height: 100%;
+    left: 0;
+}
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#menu li {
+    width: auto;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #333;
+}
+#menu li a {
+    display: block;
+    font-size: 1.1em;
+    text-align: center;
+    color: #fff;
+}
+#menu li:hover {
+    background-color: #333;
+}
+
+/*==Trang tri phan content==*/
+#content {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+#content .header {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+#content .header .text-box {
+    position: absolute;
+    z-index: 15;
+    margin: 0 auto;
+    top: 150px;
+    max-width: 400px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color:#222;
+    color: white;
+    font-size: 35px;
+} 
+
+/*==Trang tri photos==*/
+/*.gallery {
+    padding: 0 10px;
+    overflow: hidden;
+}
+.gallery .photo {
+    width: 33.3333%;
+    float: left;
+    margin: 0;
+}
+.gallery img {
+    max-width: 100%;
+    height: 100%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}*/
+.gallery {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+.gallery ,photo {
+    flex: 1;
+}
+
+/*==Trang tri Footer==*/
+#footer {
+    padding-left: 10px;
+    padding-right: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 200;
+    height: 60px;
+    line-height: 60px;
+}
+#footer h4 {
+    background-color: #222;
+}
