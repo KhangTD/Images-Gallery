@@ -16,13 +16,20 @@
 a {
     text-decoration: none;
 }
-/*==Len khung va tao menu doc==*/
+
 #container {
     padding-left: 150px;
     position: relative;
     width:100%;
     left: 0;
  }
+ #content {
+     position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+ /*======Menu======*/
 #menu {
     background-color: #222;
     position: fixed;
@@ -31,11 +38,13 @@ a {
     left: 0;
 }
 #menu ul {
+    background-color: #222;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-#menu li {
+#menu ul li {
+    position: relative;
     width: auto;
     height: 50px;
     line-height: 50px;
@@ -43,75 +52,70 @@ a {
 }
 #menu li a {
     display: block;
-    font-size: 1.1em;
+    font-size: 16px;
     text-align: center;
     color: #fff;
 }
 #menu li:hover {
     background-color: #333;
 }
-
-/*==Trang tri phan content==*/
-#content {
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-#content .header {
-    position: relative;
-    padding-left: 10px;
-    padding-right: 20px;
-    margin-bottom: 20px;
-}
-
-#content .header .text-box {
-    position: absolute;
-    z-index: 15;
-    margin: 0 auto;
-    top: 150px;
-    max-width: 400px;
-    height: 100px;
-    line-height: 100px;
+/*======Header======*/
+header {
+    margin: 0 20px;
+    padding: 90px 0;
+    height: 100%;
     text-align: center;
-    background-color:#222;
-    color: white;
-    font-size: 35px;
-} 
-
-/*==Trang tri photos==*/
-/*.gallery {
-    padding: 0 10px;
-    overflow: hidden;
+    color: #444;
+    background-image: url(logo.jpeg);
+    background-size: cover;
+    background-position: 50% 50%;
 }
-.gallery .photo {
-    width: 33.3333%;
-    float: left;
-    margin: 0;
+header h1 { 
+    font-size: 56px;
+    height: 60px;
+    line-height: 60px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+header h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+/*======Title-tab======*/
+.title-tab {
+    color: #444;
+}
+.title-tab h2 {
+    margin: 20px 20px 0 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+/*======Gallery======*/
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 10px 10px 0px 20px;
+}
+.gallery div {
+    display: block;
+    width: 33.333%;
+    padding: 0 10px 10px 0;
 }
 .gallery img {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
-    padding-right: 10px;
-    padding-bottom: 10px;
-}*/
-.gallery {
-    max-width: 1400px;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 10px;
-}
-.gallery ,photo {
-    flex: 1;
 }
 
-/*==Trang tri Footer==*/
+/*======Footer======*/
 #footer {
-    padding-left: 10px;
+    padding-left: 20px;
     padding-right: 20px;
     color: #fff;
     text-align: center;
-    font-size: 1.2em;
-    font-weight: 200;
+    font-size: 16px;
+    font-weight: 100;
     height: 60px;
     line-height: 60px;
 }
